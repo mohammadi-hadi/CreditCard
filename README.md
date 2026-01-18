@@ -1,48 +1,101 @@
+<div align="center">
+
 # Credit Card Fraud Detection
 
-This repository contains a Python script for detecting credit card fraud using various visualization and machine learning techniques. The dataset consists of 50,000 credit card transactions, each labeled as fraudulent or non-fraudulent.
+### Machine Learning Pipeline for Detecting Fraudulent Transactions
 
-Overview
-The script performs the following steps:
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/)
+[![scikit-learn](https://img.shields.io/badge/scikit--learn-1.0+-orange.svg)](https://scikit-learn.org/)
 
-Importing the dataset
-Exploratory Data Analysis (EDA)
-Outlier detection
-Feature reduction
-Preprocessing
-Model training and evaluation
-Usage
-To run the script, you will need Python and the following libraries installed:
+*Comprehensive fraud detection using exploratory data analysis and machine learning*
 
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-You can then run the script as follows:
+---
 
-bash
-Copy code
-python credit_card_fraud_detection.py
-Data
-The dataset contains 50,000 credit card transactions, with each transaction having 30 features. The Class feature indicates whether the transaction is fraudulent (1) or not (0).
+</div>
 
-Exploratory Data Analysis (EDA)
-The EDA includes various visualizations to understand the distribution of the features, their correlation, and their relationship with the target variable (Class). Some of the visualizations used are:
+## Overview
 
-Pie chart for target distribution
-Scatter plots for target distribution with two features
-Histograms, KDE plots, box plots, and violin plots for feature distribution with the target variable
-Heatmaps for feature correlation
-Scatter plots for correlation between features and the target variable
-Outlier Detection
-The script uses the Tukey outlier detection method to identify outliers in the dataset. Outliers are visualized using box plots for each feature.
+This repository contains a Python implementation for detecting credit card fraud using various visualization and machine learning techniques. The pipeline includes exploratory data analysis, outlier detection, feature reduction, and model evaluation.
 
-Feature Reduction
-Principal Component Analysis (PCA) is used to reduce the dimensionality of the dataset, making it easier to visualize and analyze. The script includes plots for explained variance of the principal components and 2D plots of the transformed data.
+## Features
 
-Preprocessing
-The script checks for missing values in the dataset and handles them if necessary.
+- **Exploratory Data Analysis (EDA)**: Comprehensive visualizations for understanding data patterns
+- **Outlier Detection**: Tukey method for identifying anomalies
+- **Feature Reduction**: PCA for dimensionality reduction
+- **Multiple Visualizations**: Pie charts, scatter plots, histograms, KDE, box plots, violin plots, heatmaps
 
-Model Training and Evaluation
-A machine learning model can be trained on the preprocessed data to predict whether a given transaction is fraudulent or not. The choice of model and its evaluation metrics are not included in this README but can be added based on the user's preferences.
+## Dataset
+
+The dataset consists of 50,000 credit card transactions with:
+- 30 features per transaction
+- Binary classification: fraudulent (1) or non-fraudulent (0)
+
+## Quick Start
+
+```bash
+# Clone the repository
+git clone https://github.com/mohammadi-hadi/CreditCard.git
+cd CreditCard
+
+# Install dependencies
+pip install pandas numpy matplotlib seaborn scikit-learn
+
+# Run the analysis
+python "creditcard data fraud detection.py"
+```
+
+## Pipeline
+
+### 1. Data Import
+Load and prepare the credit card transaction dataset.
+
+### 2. Exploratory Data Analysis
+- Pie chart for target distribution
+- Scatter plots for feature relationships
+- Histograms, KDE plots, box plots, violin plots
+- Correlation heatmaps
+
+### 3. Outlier Detection
+Tukey method implementation with box plot visualizations for each feature.
+
+### 4. Feature Reduction
+- Principal Component Analysis (PCA)
+- Explained variance plots
+- 2D transformed data visualization
+
+### 5. Preprocessing
+Missing value detection and handling.
+
+### 6. Model Training
+Machine learning model training and evaluation for fraud prediction.
+
+## Repository Structure
+
+```
+CreditCard/
+├── creditcard data fraud detection.py  # Main analysis script
+├── LICENSE                              # MIT License
+├── CONTRIBUTING.md                      # Contribution guidelines
+└── README.md                           # This file
+```
+
+## Requirements
+
+- Python 3.8+
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## Contact
+
+For questions or collaboration inquiries:
+- **Hadi Mohammadi** - Utrecht University
+- **Email**: [h.mohammadi@uu.nl](mailto:h.mohammadi@uu.nl)
+- **Website**: [mohammadi.cv](https://mohammadi.cv)
