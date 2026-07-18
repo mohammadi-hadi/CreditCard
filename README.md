@@ -1,9 +1,14 @@
+<div align="center">
+
 # Credit Card Fraud Detection
 
-Exploratory analysis and classification experiments on the Kaggle credit card fraud dataset, from EDA and outlier detection to resampling, classical classifiers, neural networks, and clustering.
-
-[![Python](https://img.shields.io/badge/python-3.x-blue.svg)](https://www.python.org/)
+[![Python](https://img.shields.io/badge/Python-3.x-blue.svg)](https://www.python.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Dataset: Kaggle](https://img.shields.io/badge/Dataset-Kaggle-20BEFF.svg)](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud)
+
+*Detecting fraudulent transactions on highly imbalanced data — EDA, resampling, classical classifiers, neural networks, and clustering.*
+
+</div>
 
 ## Overview
 
@@ -28,32 +33,34 @@ All in `creditcard data fraud detection.py`:
 - **Neural networks**: feed-forward Keras models (dense layers with concatenation/skip connections, one variant with dropout), trained with class weights and binary cross-entropy.
 - **Unsupervised and hybrid**: K-Means clustering with silhouette analysis on PCA-reduced data, followed by cluster-wise classification experiments.
 
-## Repository structure
+## Quick Start
 
-```
-CreditCard/
-├── creditcard data fraud detection.py   # Full analysis pipeline (exported Colab notebook)
-├── CONTRIBUTING.md
-├── LICENSE
-└── README.md
-```
-
-## Requirements / How to run
-
-Python 3 with:
-
-```
-pandas numpy matplotlib seaborn scipy scikit-learn imbalanced-learn xgboost tensorflow keras
+```bash
+git clone https://github.com/mohammadi-hadi/CreditCard.git
+cd CreditCard
+pip install -r requirements.txt
 ```
 
 1. Download `creditcard.csv` from the Kaggle link above.
 2. Update the path in the `pd.read_csv(...)` call near the top of the script (it currently points to a Google Drive location from the original Colab session).
 3. Run the script section by section, or import it back into a notebook environment.
 
+## Repository Structure
+
+```
+CreditCard/
+├── creditcard data fraud detection.py   # Full analysis pipeline (exported Colab notebook)
+├── requirements.txt                     # Python dependencies
+├── CONTRIBUTING.md                      # Contribution guidelines
+├── LICENSE                              # MIT License
+└── README.md                            # This file
+```
+
 ## License
 
-MIT — see [LICENSE](LICENSE).
+This project is licensed under the MIT License — see [LICENSE](LICENSE) for details.
 
-## Author
+## Contact
 
-Hadi Mohammadi — [mohammadi.cv](https://mohammadi.cv)
+- **Hadi Mohammadi** — Utrecht University
+- Website: [mohammadi.cv](https://mohammadi.cv)
