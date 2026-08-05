@@ -1,0 +1,20 @@
+{
+  "upload_type": "software",
+  "title": "Credit Card Fraud Detection",
+  "description": "Credit card fraud detection on the Kaggle dataset with classical ML, resampling, and neural networks.",
+  "creators": [
+    {
+      "name": "Mohammadi, Hadi",
+      "orcid": "0000-0003-0860-9200"
+    }
+  ],
+  "license": "MIT",
+  "keywords": [
+    "fraud-detection",
+    "classification",
+    "imbalanced-data",
+    "machine-learning",
+    "scikit-learn",
+    "kaggle"
+  ]
+}

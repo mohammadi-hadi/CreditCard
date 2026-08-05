@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+title: "Credit Card Fraud Detection"
+message: "If you use this software, please cite it as below."
+type: software
+authors:
+  - family-names: Mohammadi
+    given-names: Hadi
+    orcid: "https://orcid.org/0000-0003-0860-9200"
+repository-code: "https://github.com/mohammadi-hadi/CreditCard"
+license: MIT
+version: 1.0.0
+date-released: "2026-08-05"
+abstract: "Credit card fraud detection on the Kaggle dataset with classical ML, resampling, and neural networks."
+keywords:
+  - fraud-detection
+  - classification
+  - imbalanced-data
+  - machine-learning
+  - scikit-learn
+  - kaggle
